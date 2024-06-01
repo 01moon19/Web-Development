@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 3000px;
+        }
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        /* static: default property on which you can neither mention top, bottom nor right, left */
+       /* #i2{
+        top: 30px;
+        left: 40px;
+       } */
+
+        /* relative: an element can be positioned relatively to the window using top, left,right and bottom properties; gap maintained.*/
+        /* #i2{
+            position: relative;
+            left: 30px;
+            top: 40px;
+        } */
+
+        /* absolute: overlapping; it is positioned relative to its closest positioned ancestor; gap not maintained i.e. gap filled; top, left, right and bottom usable.*/
+        /* #i3{
+            position: absolute;
+        } */
+
+        /* fixed: remains fixed irrespective of the changes on the screen for example scrolling. */
+        #i4{
+            position: fixed;
+        }
+
+        /* sticky: shows its property only inside its current parent*/
+        #i3{
+            position: sticky;
+            top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+            
+        <img id="i1" src="Court-770x433.webp" alt="p1" height="300px" width="300px">
+
+        <img id="i2" src="Court-770x433.webp" alt="p2" height="300px" width="300px">
+
+        <img id="i3" src="Court-770x433.webp" alt="p3" height="300px" width="300px">
+
+        <img id="i4" src="Court-770x433.webp" alt="p4" height="300px" width="300px">
+
+        
+    </div>
+</body>
+</html>

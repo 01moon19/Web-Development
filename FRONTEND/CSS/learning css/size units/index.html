@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <!-- viewport: all that i can see on my UI 
+    vw- viewport width
+    vh- viewport height-->
+    <title>Document</title>
+
+    <style>
+        .box{
+           border: 2px solid red; 
+           width: 25%;
+           
+        }
+
+        .parent{
+            border: 1px solid blue;
+            background-color: beige;
+            width: 50%;
+        }
+
+        .child{
+            border: 1px solid green;
+            background-color: aqua;
+            width: 25%;
+        }
+
+        .container{
+            border: 2px solid green;
+            background-color: beige;
+            height: 100vh;
+            width: 70vw;
+        }
+
+        .box1{
+            border: black solid 2px;
+            font-size: 50px;
+        }
+
+        /* relative units
+        em- relative to parent
+        rem- relative to html tag(root element)
+        defualt of root element is 1rem=16px. */
+
+        .wrapper{
+            font-size: 1em;
+            /* default 1em=16px */
+            }
+            .px{
+              width: 20px;  
+            }
+
+            .vw{
+                width: 10vw;
+            }
+
+            .em{
+                width: 10em;
+            }
+
+            .rem{
+                font-size: 5rem;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        let's get started with size units
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+
+    <div class="container">
+        Kuch bhi likhdiya
+    </div>
+
+    <div class="box">
+        Mayank Singh
+    </div>
+
+    <div class="wrapper">
+        <div class="px">I am 20px wide.</div>
+        <div class="vw">I am 10vw wide.</div>
+        <div class="em">I am 10em wide.</div>
+        <div class="rem">I am 5rem big.</div>
+    </div>
+</body>
+</html>

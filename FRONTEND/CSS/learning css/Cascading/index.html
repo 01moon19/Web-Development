@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking css file -->
+    <!-- external has lowest priority among the three -->
+    <link rel="stylesheet" href="external.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        p{
+            background-color: burlywood /*gives higher priorty to this*/;
+        }
+        /* selector */
+        h1{
+            /* property*/ color: brown; /*value*/
+        }
+    </style>
+
+<!-- here priority depends on order of writing code.
+    <link rel="stylesheet" href="external.css"> -->
+
+</head>
+<body>
+    
+    <h1>Welcome to CSS</h1>
+
+    <!-- Inline CSS -->
+    <!-- not recommended as it creats confusion while complex coding. -->
+    
+    <P style="color: green;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam magni nam sequi ipsa numquam sint? Nihil molestias dignissimos eum possimus maxime dolor, inventore porro id consectetur impedit mollitia? Ipsum.</P>
+
+    <!-- has higher priority than internal css -->
+    <p style="background-color: yellow;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione quam necessitatibus iste ad similique enim, voluptatibus quaerat nemo fuga ipsa!
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vel eligendi a quisquam voluptates quam maxime exercitationem, minima numquam vitae laboriosam fugit magnam velit repudiandae fuga, nesciunt adipisci expedita natus blanditiis nam? Praesentium, expedita eum harum ex quidem consequatur numquam eligendi ratione officia, ut dolorum quod, corporis voluptate eaque nesciunt.</p>
+
+    <footer>this is the footer.</footer>
+
+</body>
+</html>

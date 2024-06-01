@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+    /* to use custom all over the code */
+    :root{
+        --primary-color: brown;
+        --custom-width: 800px;
+    }
+
+    .container{
+        background-color: beige;
+        height: 1000px;
+        width: 1000px;
+        border: 2px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        /* --primary-color: brown; */
+        /* --custom-width: 800px; */
+        /* these can be used within these brackets only */
+        background-color: aquamarine;
+        height: 800px;
+        width: var(--custom-width);
+        border: 1px solid brown;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 10px 10px var(--primary-color);
+        /* blur radius */
+        box-shadow: 10px 10px 5px brown;
+        /* spread radius */
+        box-shadow: 10px 10px 5px 15px brown;
+        /* shadow inside */
+        box-shadow: inset 10px 10px brown;
+        /* multiple shadows */
+        box-shadow: 10px 10px red, 15px 5px green;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Court-770x433.webp" alt="image">
+            <h2 id="head">welcome</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, fuga.</p>
+        </div>
+    </div>
+</body>
+</html>

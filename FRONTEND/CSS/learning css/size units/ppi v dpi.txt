@@ -1,0 +1,5 @@
+DPI:
+  refers to the number of printed dots contained within one inch of an image printed by a printer. 
+
+PPI:
+ refers to the number of pixels contained within one inch of an image displayed on a computer monitor.

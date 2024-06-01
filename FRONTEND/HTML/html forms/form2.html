@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Form2</title>
+</head>
+<body>
+    <b>Job Application</b>
+     <form>
+            <br/>
+            <br/>
+            <label for="Name">Name:</label>
+            <br/>
+            <input type="text" name="Name" id="Name" placeholder="Enter your full name here">
+            <br><br>
+
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="example@example.com">
+            <br><br>
+
+
+            <label for="phone">Phone:</label>
+            <br>
+            <input type="tel" name="phone" id="phone" placeholder="do not use +91">
+            <br><br>
+
+            <label for="file">Resume:</label>
+            <br>
+            <input type="file" name="resume" id="file" value="choose file">
+            <br><br>
+
+            <label for="num" >Experience:</label>
+            <br>
+            <input type="number" name="Experience"  id="num" placeholder="in years" max="50" min="0">
+            <br><br>
+
+            <fieldset>
+                <legend>Skills:</legend>
+                <input type="checkbox" name="" id="checkbox">
+                <br>
+                <label for="checkbox">HTML</label>
+                <br><br>
+                <input type="checkbox" name="" id="checkbox">
+                <br>
+                <label for="checkbox">CSS</label>
+                <br><br>
+                <input type="checkbox" name="" id="checkbox">
+                <br>
+                <label for="checkbox">JavaScript</label>
+                <br><br>
+                </fieldset>
+                <br>
+
+            <label for="dropdown">Highest Education:</label>
+            <br>
+            <select name="Occupation" id="dropdown">
+                <option value="High School">High School</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Graduate">Graduate</option>
+            </select>
+            <br><br>
+
+            <fieldset>
+                <!-- giving name to the radio buttons lets only one of the radio buttons select -->
+                <legend>Avaialability:</legend>
+                <input type="radio" name="radio" id="radio">
+                <br>
+                <label for="radio">Part-Time</label>
+                <br><br>
+                <input type="radio" name="radio" id="radio2">
+                <br>
+                <label for="radio2">Full-Time</label>
+                <br><br>
+            </fieldset>
+
+
+            <label for="ta">Additional Comments:</label>
+            <br>       
+            <textarea name="Comments" id="ta" cols="30" rows="10" placeholder="Enter text here"></textarea>
+            <button>Submit Application</button>
+        
+     </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .conatiner{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #b1{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .para{
+            border: 1px black solid;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #p1{
+            background-color: brown;
+        }
+        #p2{
+            background-color: green;
+        }
+
+        #b2{
+            background-color: red;
+        }
+
+        @media (max-width:640px){
+            .conatiner{
+                flex-direction: column;
+            }
+        }       
+
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="box" id="b1">
+            <p class="para" id="p1">text1</p>
+            <p class="para" id="p2">text2</p>
+        </div>
+        <div class="box" id="b2">
+            <img src="Court-770x433.webp" alt="image" height="200px" width="200px">
+        </div>
+       
+    </div>
+</body>
+</html>

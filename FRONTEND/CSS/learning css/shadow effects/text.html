@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+    /* to use custom all over the code */
+    :root{
+        --primary-color: brown;
+        --custom-width: 800px;
+    }
+
+    .container{
+        background-color: beige;
+        height: 1000px;
+        width: 1000px;
+        border: 2px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        /* --primary-color: brown; */
+        /* --custom-width: 800px; */
+        /* these can be used within these brackets only */
+        background-color: aquamarine;
+        height: 800px;
+        width: var(--custom-width);
+        border: 1px solid var(--primary-color);
+        margin: 5px;
+        padding: 5px;
+        
+    }
+
+    #head{
+        /* syn1 */
+        text-shadow: 2px 2px 2px white;
+        /* syn2 */
+        text-shadow: yellow 2px 2px 2px;
+        /* syn3 */
+        text-shadow: greenyellow 2px 2px;
+        /* syn4 */
+        text-shadow: 2px 2px;
+        /* from here we can observe by default the color of textshadow is black */
+        /* multiple shadows */
+        text-shadow: white 2px 2px 2px, yellow 4px 4px 4px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Court-770x433.webp" alt="image">
+            <h2 id="head">welcome</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, fuga.</p>
+        </div>
+    </div>
+</body>
+</html>

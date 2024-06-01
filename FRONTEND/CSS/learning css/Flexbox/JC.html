@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .conatiner{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            justify-content: center;
+            justify-content: start;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #b1{
+            background-color: aqua;
+        }
+
+        #b2{
+            background-color: red;
+        }
+
+        #b3{
+            background-color: blueviolet
+        }
+
+        #b4{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- Justify-content : places things according to the main axis.
+    if FD-row -- mainaxis-horizontal
+    if FD-column -- mainaxis-vertical -->
+
+    <div class="conatiner">
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+        <div class="box" id="b4"></div>
+    </div>
+
+</body>
+</html>

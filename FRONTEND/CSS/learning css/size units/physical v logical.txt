@@ -1,0 +1,9 @@
+logical pixel:
+Logical pixels are roughly the same visual size across devices.
+
+Physical pixel:
+Physical pixels are the size of the actual hardware pixels on the device; 1/96 of an inch or 0.26mm.
+
+The number of physical pixels per logical pixel is described by the devicePixelRatio.
+
+Device Pixel Ratio (DPR) is the ratio between the physical pixel density of a device and its logical pixel density.
